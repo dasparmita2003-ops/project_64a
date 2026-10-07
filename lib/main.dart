@@ -1,20 +1,15 @@
-import 'package:project_64a/home_page.dart';
-import 'package:flutter/material.dart';
-
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  @override
+  @override 
   Widget build(BuildContext context) {
     return MaterialApp(
-      //theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-
-      home: HomePage(),
-    );
+      //theme: ThemeData.dark(),
+      home: Scaffold(body: Text("Hello flutter")),
+      ); //MaterialApp
   }
 }
+  
